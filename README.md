@@ -84,3 +84,29 @@ index.html --> **loads** app.js
 	  V
 	Terminated`
 _______________________________________________________________________________________________________________________________________________
+
+**Meaning of -c-1 in start (package.jsonm)**
+* it will ensure that we dont cache any assets using normal browser. 
+
+**Put sw.js in root folder so that it cann access all the folders and subfolders of your project**
+**before you put any code in SW you have to register it**
+
+* register Sw in app.js because it is available in both the HTML files
+_______________________________________________________________________________________________________________________________________________
+# The App Install Banner & Chrome 68+
+* In the next lecture, I'll show you how Chrome automatically shows an "App Install Banner". Starting with Chrome version 68, it'll not do this automatically anymore. You instead have to listen to a specific event (beforeinstallprompt ) and then show the banner manually.
+
+* This approach is covered in this course! You'll learn all about it in lecture 38 - don't skip the next lectures though, they're still important.
+
+* Read more about this change [here](https://developers.google.com/web/fundamentals/app-install-banners/)
+
+* Also, if you want to manually trigger the installation of the app, you might not see the "Add to Homescreen" button in the same place I do in the lecture.
+
+* You can manually trigger installation via the Chrome website menu ("Install Instagram as Progressive Web App"):
+
+# Connecting Chrome Developer Tools to a Real/ Emulated Device
+* It's easy to connect your Chrome Developer Tools with a Real or Emulated Android Device (event though the latter unfortunately never worked for me).
+
+* The following article explains it step-by-step and by using helpful images: https://developers.google.com/web/tools/chrome-devtools/remote-debugging/
+
+* Make sure you enabled "Developer Mode" on your Device! You do that by tapping your Android Build Number (in the Settings) 7 times. Yes, this is no joke ;-)
